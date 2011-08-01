@@ -1,0 +1,29 @@
+Hexa.xText is a .Net command line tool to extract text from source files for later translation, just like the GNU xgettext does.
+
+Extracted text are placed inside po files that must be compiled into satellite assemblies through the included PO2Assembly MSBuild task.
+
+Hexa.xText will extract any string contained in a method call like the following:
+
+function("String to extract");
+
+where function is the method that calls gettext to translate the string.
+
+Usage: Hexa.xText.exe [function] [folder] [language]
+
+Follow us:
+
+(www.hexasystems.com)
+(www.twitter.com/hexasystems)
+(carlos.mendible.com)
+
+
+This software is licensed under the Apache License, Version 2.0
+(the "License"); you may not use the files in this distribution
+except in compliance with the License. You may obtain a copy of
+the License at http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing,
+software distributed under the License is distributed on an
+"AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND,
+either express or implied. See the License for the specific
+language governing permissions and limitations under the License.
